@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>Snake Game</title>
+		<style type="text/css">
+			#mycanvas {
+				background-image: url("assets/bg.jpg");
+				border: 20px solid green;
+			}
+		
+			.contain {
+				text-align: center;
+				display: inline-block;
+			}
+		
+			#bg {
+				border-radius: 5%;
+			}
+		
+			body {
+				background-color: #00ffff;
+			}
+		
+			.card {
+				background-color: rgb(205, 178, 90);
+				border-radius: 10px;
+				width: 1200px;
+				height: 500px;
+				margin: 20px auto;
+				padding: 20px;
+				text-align: center;
+				transition: transform 0.3s;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			}
+		
+			.card:hover {
+				transform: scale(1.05);
+			}
+		
+			.card p {
+				font-size: 24px;
+				text-align: justify;
+			}
+		
+			.card ul {
+				text-align: left;
+				margin-left: 40px;
+				margin-top: 20px;
+			}
+		
+			.card ul li {
+				font-size: 20px;
+				line-height: 1.5;
+			}
+		
+			.card ul li:before {
+				content: "\2022"; /* Add bullet point */
+				color: rgb(240, 255, 30);
+				font-weight: bold;
+				display: inline-block;
+				width: 1em;
+				margin-left: -1em;
+			}
+		</style>
+		
+		<script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "50%" 
+        }
+		</script>
+	</head>
+	
+
+	<body onload="zoom()">
+
+
+		
+		<div class="contain">
+			<canvas id="mycanvas"></canvas>
+		</div>
+
+		<div class="card">
+			<p>
+				<strong>Project: Snake Game using HTML, CSS, and JavaScript</strong><br><br>
+				Developed a classic Snake game using object-oriented programming concepts in HTML, CSS, and JavaScript. Implemented features such as HTML5 canvas, game loop, pen, and event listeners to create an interactive gaming experience. The game is rendered on a black background using the HTML5 canvas element, providing a visually appealing interface. The snake's movement is controlled by the arrow keys, and the objective is to eat the food and grow longer without colliding with the walls or its own body. Utilized JavaScript to manage the game loop, update the snake's position, detect collisions, and handle user input. Demonstrated proficiency in front-end development, problem-solving, and application of object-oriented programming principles.
+			</p>
+		</div>
+
+		<!-- <div class="contain">
+			<div>
+  			<a href="https://github.com/prateeksawhney97" target="_blank"><img src="assets/fork-me-on-github.png"></a>
+  			</div>
+  		</div>
+
+  		<div class="contain">
+  			<img src="assets/bg-image.png" id="bg">
+  		</div> -->
+
+		<script src="snake.js"></script>
+		
+		<div style="background-color:rgb(205, 178, 90); border-radius: 10px;">
+			<div style="background-color:rgb(240, 255, 30); margin-top: 5px; height: 100px; border-radius: 10px;">
+			<p style="font-size:60px; text-align: center;">A Snake Game based on JavaScript</p>
+			</div>
+			<p style="font-size:55px; text-align: center;">Refresh the page to start a new session!</p>
+		</div>
+
+		
+	</body>
+</html>
